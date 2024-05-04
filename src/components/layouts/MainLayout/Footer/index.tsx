@@ -9,15 +9,15 @@ function Footer() {
             <p className="font-semibold text-lg">akaDCI</p>
           </Link>
           <Link to={"/term"}>
-            <p className="text-base font-normal">Museum</p>
+            <p className="text-base font-normal">Term of service</p>
           </Link>
           <Link to={"/help"}>
-            <p className="text-base font-normal">Studio</p>
+            <p className="text-base font-normal">Help</p>
           </Link>
         </div>
-        <Link to={"/help"}>
+        <a href="https://www.facebook.com/SawSew467/" target="_blank">
           <p className="text-base font-normal">Facebook</p>
-        </Link>
+        </a>
       </div>
     </header>
   );

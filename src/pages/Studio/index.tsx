@@ -1,5 +1,7 @@
+import StudioModule from "@/components/modules/studioModule/Main";
+
 function Studio() {
-  return <div>Studio</div>;
+  return <StudioModule />;
 }
 
 export default Studio;
