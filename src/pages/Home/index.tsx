@@ -1,5 +1,7 @@
+import HomeModule from "@/components/modules/homeModule/Main";
+
 function HomePage() {
-  return <div>HomePage</div>;
+  return <HomeModule />;
 }
 
 export default HomePage;
