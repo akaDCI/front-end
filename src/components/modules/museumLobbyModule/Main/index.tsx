@@ -5,9 +5,9 @@ import RecentContent from "../RecentContent";
 
 function MuseumLobbyModule() {
   return (
-    <section className="h-full bg-slate-50 p-10">
-      <Tabs defaultValue="trending" className="w-[400px]">
-        <TabsList className="grid w-full grid-cols-2">
+    <section className="h-full bg-slate-50 px-8 py-5">
+      <Tabs defaultValue="trending">
+        <TabsList className="">
           <TabsTrigger value="trending">Trending</TabsTrigger>
           <TabsTrigger value="recent">Recent</TabsTrigger>
         </TabsList>
