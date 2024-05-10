@@ -1,9 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
-function Footer() {
+type FooterProps = {
+  transparent?: boolean;
+};
+function Footer(props: FooterProps) {
+  const footerStype = props.transparent
+    ? "w-full py-1 bg-[#F8FAFC66] drop-shadow-sm backdrop-blur"
+    : "w-full py-4 bg-slate-50 drop-shadow-sm";
   return (
-    <header className="w-full py-4 bg-slate-50">
+    <header className={footerStype}>
       <div className="flex items-center justify-between mx-auto px-10 ">
         <div className="flex items-center gap-5">
           <Link to={"/"}>

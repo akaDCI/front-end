@@ -13,10 +13,14 @@ import User from "@/types/User";
 
 type HeaderProps = {
   user?: User;
+  transparent?: boolean;
 };
 function Header(props: HeaderProps) {
+  const headerStyle = props.transparent
+    ? "w-full py-2 bg-[#F8FAFC66] drop-shadow-sm sticky top-0 z-50 backdrop-blur"
+    : "w-full py-4 bg-slate-50 drop-shadow-sm sticky top-0 z-50";
   return (
-    <header className="w-full py-4 bg-slate-50 drop-shadow-sm">
+    <header className={headerStyle}>
       <div className="flex items-center justify-between mx-auto px-10">
         <div className="flex items-center gap-[20px]">
           <Link to={"/"}>
