@@ -8,7 +8,7 @@ const cardMockData = [
       "https://img.freepik.com/premium-photo/abstract-creative-background-using-your-project-ui-ux-design_155807-1137.jpg",
     userAvatar:
       "https://cand.com.vn/Files/Image/thuthuy/2019/10/31/ea654603-db33-4b11-8b28-bb7e101769d3.jpg",
-    title: "Charm Museum",
+    title: "Hello world",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     visits: 1900,
     likes: 200,

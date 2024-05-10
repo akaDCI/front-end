@@ -13,7 +13,6 @@ type MuseumCardProps = {
   isLiked?: boolean;
 };
 export default function MuseumCard(props: MuseumCardProps) {
-  console.log(props);
   return (
     <Card className="p-4 cursor-pointer hover:shadow-xl transition">
       <AspectRatio ratio={16 / 9}>

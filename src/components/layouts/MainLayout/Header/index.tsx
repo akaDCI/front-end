@@ -9,8 +9,12 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import User from "@/types/User";
 
-function Header() {
+type HeaderProps = {
+  user?: User;
+};
+function Header(props: HeaderProps) {
   return (
     <header className="w-full py-4 bg-slate-50 drop-shadow-sm">
       <div className="flex items-center justify-between mx-auto px-10">
@@ -38,10 +42,18 @@ function Header() {
             </NavigationMenuList>
           </NavigationMenu>
         </div>
-        <div className="flex gap-2">
-          <Button variant="outline">Register</Button>
-          <Button variant="default">Login</Button>
-        </div>
+        {props.user ? (
+          <img
+            src={props.user.avatar}
+            alt={props.user.name}
+            className="rounded-full w-[2.5rem] h-[2.5rem] object-cover"
+          />
+        ) : (
+          <div className="flex gap-2">
+            <Button variant="outline">Register</Button>
+            <Button variant="default">Login</Button>
+          </div>
+        )}
       </div>
     </header>
   );
