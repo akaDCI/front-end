@@ -10,10 +10,10 @@ function Footer(props: FooterProps) {
     : "w-full py-4 bg-slate-50 drop-shadow-sm";
   return (
     <header className={footerStype}>
-      <div className="flex items-center justify-between mx-auto px-10 ">
+      <div className="mx-auto flex items-center justify-between px-10">
         <div className="flex items-center gap-5">
           <Link to={"/"}>
-            <p className="font-semibold text-lg">akaDCI</p>
+            <p className="text-lg font-semibold">akaDCI</p>
           </Link>
           <Link to={"/term"}>
             <Button variant="link" className="text-sm font-normal">

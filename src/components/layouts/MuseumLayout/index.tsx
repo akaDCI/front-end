@@ -5,13 +5,13 @@ import Footer from "../MainLayout/Footer";
 
 function MuseumLayout() {
   return (
-    <div className="flex flex-col h-[100vh] ">
-      <Header transparent />
+    <div className="flex h-[100vh] flex-col">
+      {/* <Header transparent /> */}
       <div className="flex-1"></div>
-      <main className="absolute top-0 right-0 bottom-0 left-0">
+      <main className="absolute bottom-0 left-0 right-0 top-0">
         <Outlet />
       </main>
-      <Footer transparent />
+      {/* <Footer transparent /> */}
     </div>
   );
 }
